@@ -1,10 +1,12 @@
-export default {
+module.exports = {
   graphql: {
     enabled: true,
     config: {
       endpoint: "/graphql",
-      playgroundAlways: true,
       shadowCRUD: true,
+      playgroundAlways: true,
+      depthLimit: 7,
+      amountLimit: 100,
     },
   },
 };
