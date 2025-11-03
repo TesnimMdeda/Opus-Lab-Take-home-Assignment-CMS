@@ -8,6 +8,9 @@ module.exports = ({ env }) => ({
       defaultLimit: 100,
       maxLimit: 1000,
       introspection: env.bool("GRAPHQL_INTROSPECTION", true),
+      apolloServer: {
+        introspection: true,
+      },
       "import-export-entries": {
         enabled: true,
       },
