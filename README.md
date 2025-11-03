@@ -50,6 +50,8 @@ Copy code
 npm run build
 # or
 yarn build
+
+
 🌱 Strapi Seeder Script (TypeScript)
 Populate your database with demo content.
 
@@ -64,6 +66,8 @@ Copy code
 "scripts": {
   "seed": "ts-node seed.ts"
 }
+
+
 🧩 Seeder Content
 Type	Count	Description
 👩‍💻 Authors	2	Full bio + slug + email
@@ -74,15 +78,17 @@ Type	Count	Description
 📬 Newsletter	Many	Simple subscription model
 
 ⚙️ Environment Variables (.env)
-env
+.env.exemple 
 Copy code
+
 HOST=0.0.0.0
 PORT=1337
-ADMIN_JWT_SECRET=Q2l9r9hf0E1uA3gRZ1j+f7Ls5tC6yD8x
-API_TOKEN_SALT=F8h6X1g5L9p0V3q2B7nY4k2J6sR8T1w
-TRANSFER_TOKEN_SALT=W3k9Z5d8P1m4Q7r2H0j6X9n5B8s2A3b
-JWT_SECRET=M7K4J2L8D3S0P5V1Q9N6H7X2R4Y3C8T0
-APP_KEYS=U1d2G3h4J5k6L7m8,N9O0P1Q2R3S4T5U6,V7W8X9Y0Z1A2B3C4,D5E6F7G8H9I0J1K2
+
+# 🔐 Security & Secrets
+ADMIN_JWT_SECRET=your_admin_jwt_secret_here
+API_TOKEN_SALT=your_api_token_salt_here
+JWT_SECRET=your_jwt_secret_here
+APP_KEYS=your_app_key_1,your_app_key_2,your_app_key_3,your_app_key_4
 
 🟢 Hosted Admin Panel:
 https://opus-production-3e99.up.railway.app/admin
