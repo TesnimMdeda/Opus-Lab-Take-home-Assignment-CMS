@@ -50,6 +50,8 @@ Copy code
 npm run build
 # or
 yarn build
+
+
 🌱 Strapi Seeder Script (TypeScript)
 Populate your database with demo content.
 
@@ -64,6 +66,8 @@ Copy code
 "scripts": {
   "seed": "ts-node seed.ts"
 }
+
+
 🧩 Seeder Content
 Type	Count	Description
 👩‍💻 Authors	2	Full bio + slug + email
