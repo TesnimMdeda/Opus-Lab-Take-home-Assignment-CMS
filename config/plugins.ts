@@ -3,10 +3,11 @@ module.exports = {
     enabled: true,
     config: {
       endpoint: "/graphql",
-      shadowCRUD: true,
       playgroundAlways: true,
-      depthLimit: 7,
-      amountLimit: 100,
+      defaultLimit: 100,
+      maxLimit: 1000,
+      shadowCRUD: true,
+      introspection: true,
     },
   },
 };
