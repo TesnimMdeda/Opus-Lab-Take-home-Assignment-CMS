@@ -11,7 +11,7 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "strapi": "strapi",
-    "seed": "ts-node scripts/seed.ts",
+    "seed": "tsx src/seed/seed.ts",
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
@@ -35,7 +35,8 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "ts-node": "^10.9.2",
-    "typescript": "^5"
+    "tsx": "^4.20.6",
+    "typescript": "^5.3.3"
   },
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
