@@ -1,13 +1,24 @@
 /**
- * Strapi Database Seeder - JavaScript Version
- * File: seed.js
- * Run with: node seed.js
+ * Strapi Database Seeder - TypeScript Version
+ * File: /seed.ts
+ * Run with: npm run seed or ts-node seed.ts
  */
 
-const Strapi = require("@strapi/strapi");
+const strapiFactory = require("@strapi/strapi");
+
+interface PostData {
+  title: string;
+  slug: string;
+  coverImageUrl: string;
+  content: string;
+  published_date: string;
+  author: number;
+  category: number;
+  tags: number[];
+}
 
 async function seed() {
-  const strapi = await Strapi().load();
+  const strapi = await strapiFactory().load();
 
   console.log("🌱 Starting database seeding...");
 
@@ -109,7 +120,7 @@ async function seed() {
 
     // 4. Create Posts with cover images and relationships
     console.log("📝 Creating posts...");
-    const posts = [
+    const posts: PostData[] = [
       {
         title: "Modern CSS Techniques for 2024",
         slug: "modern-css-techniques",
